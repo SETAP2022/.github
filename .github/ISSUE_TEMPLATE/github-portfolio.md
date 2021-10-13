@@ -1,6 +1,6 @@
 ---
 name: General issue with the porfolios
-about: TPortfolio quesion 
+about: Portfolio quesion 
 title: "[P] -- <Add your error here>"
 labels: Portfolio-general
 assignees: ossonts
