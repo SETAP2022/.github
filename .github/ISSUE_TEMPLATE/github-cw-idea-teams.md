@@ -11,6 +11,6 @@ assignees: ossonts
 
 ## Do you have a team number?
 
-## Whihc idea/team do you belong?
+## Which idea/team do you belong?
 
 ## What is the problem?
