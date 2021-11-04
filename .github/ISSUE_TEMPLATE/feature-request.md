@@ -1,9 +1,9 @@
 ---
 name: Feature/tooling request/advice
 about: A sugestion that may help
-title: "[Suggestion] -- <Add here>"
-labels: GeneralHelp
-#assignees: ossonts
+title: "Replace this text with a title"
+labels: "feature"
+assignees: ossonts
 
 ---
 
