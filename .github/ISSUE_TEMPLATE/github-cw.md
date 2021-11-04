@@ -1,5 +1,5 @@
 ---
-name: General issue with the CW[1:5]
+name: A general issue with the CW[1:5]
 about: CW[1:5] question
 title: "Replace this text with a title"
 labels: CW

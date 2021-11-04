@@ -1,5 +1,5 @@
 ---
-name: General issue with the porfolios
+name: A general issue with the portfolios
 about: Portfolio question
 title: "Replace this text with a title"
 labels: portfolio
