@@ -1,8 +1,8 @@
 ---
 name: GitHub Workflow/Action not working
 about: For problems with the workers/actions
-title: "[PORTFOLIO WORKER] -- <Add your error here>"
-labels: WorkerError
+title: "Replace this text with a title"
+labels: runners
 assignees: ossonts
 
 ---
@@ -15,3 +15,5 @@ This issue template is **not** for errors in your code/script -->
 ## What is the reported error?
 
 ## What is the URL to the failing action/run of the worker
+
+## Screenshot

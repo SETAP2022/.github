@@ -1,8 +1,8 @@
 ---
-name: General issue with the porfolios
-about: Portfolio question
+name: General issue with the CW[1:5]
+about: CW[1:5] question
 title: "Replace this text with a title"
-labels: portfolio
+labels: CW
 assignees: ossonts
 
 ---
