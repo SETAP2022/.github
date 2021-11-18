@@ -1,0 +1,11 @@
+{
+    "name": "PortfolioAdvisor",
+    "description": "Not for general usage",
+    "iconName": "PortfolioAdvisor",
+
+    "categories": [
+        "Markdown"
+    ],
+    "filePatterns": [
+    ]
+}
