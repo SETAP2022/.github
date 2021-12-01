@@ -20,7 +20,7 @@ jobs:
         run: |
             apt update
             apt install -y plantuml
-            plantuml puml/*.puml -o ../image/
+            plantuml -v puml/*.puml -o ../image/
 
       - uses: EndBug/add-and-commit@v7
         with:
