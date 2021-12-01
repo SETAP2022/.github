@@ -20,4 +20,4 @@ jobs:
         run: |
             apt update
             apt install -y plantuml
-            plantuml puml/*
+            plantuml puml/*.puml -o image/
