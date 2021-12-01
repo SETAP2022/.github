@@ -20,7 +20,9 @@ jobs:
         run: |
             apt update
             apt install -y plantuml
-            plantuml -v ../puml/*.puml -o ../images/
+            pwd
+            tree .
+            plantuml -v ./puml/*.puml -o ../images/
             tree .
             git status
 
