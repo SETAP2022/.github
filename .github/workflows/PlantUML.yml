@@ -21,13 +21,15 @@ jobs:
             apt update
             apt install -y plantuml
             plantuml -v puml/*.puml -o ../image/
+            tree .
+            git status
 
       - uses: EndBug/add-and-commit@v7
         with:
           message: "Plant UML"
           author_name: "OssontsBOT"
           #branch: feedback
-          add:  "images/*"
+          add:  "images/**"
           #tag: 'Submit --force'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
