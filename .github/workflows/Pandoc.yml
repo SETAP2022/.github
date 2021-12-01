@@ -13,6 +13,7 @@ on:
       git-ref:
         description: SHA (Leave Blank)
         required: false
+        type: string
   # push:
   #   branches: [ master , main ]
   #   paths:
