@@ -6,9 +6,10 @@ on: #DO NOT CHANGE
         templateRepo:
           required: true
           type: string
-        # PAT_RO:
-        #   required: true
-        #   type: string
+      secrets:
+        PAT_RO:
+          required: true
+
 
 jobs:
   #markdown-link-check:
