@@ -3,9 +3,12 @@ name: CheckForUpdates
 on: #DO NOT CHANGE
   workflow_call: #https://docs.github.com/en/actions/learn-github-actions/reusing-workflows#creating-a-reusable-workflow
       inputs:
-      templateRepo:
-        required: true
-        type: string
+        templateRepo:
+          required: true
+          type: string
+        PAT_RO:
+          required: true
+          type: string
 
 jobs:
   #markdown-link-check:
@@ -30,7 +33,7 @@ jobs:
       uses: actions/checkout@v2                            # 2
       with:
         repository:  ${{ inputs.templateRepo }}
-        token: ${{ secrets.PAT_RO }}              # 4
+        token: ${{ inputs.PAT_RO }}              # 4
         path: Template
 
     - name: Clone Student Repository (Latest)
