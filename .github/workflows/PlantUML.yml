@@ -23,7 +23,8 @@ jobs:
             #apt install -y plantuml
             #pwd
             tree .
-            plantuml -v puml/*.puml -o ../images/
+            plantuml -v -tsvg puml/*.puml -o ../images/
+            plantuml -v -tpng puml/*.puml -o ../images/
             tree .
             git status
 
