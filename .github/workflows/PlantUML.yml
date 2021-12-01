@@ -23,8 +23,8 @@ jobs:
             #apt install -y plantuml
             #pwd
             tree .
-            plantuml -v -tsvg puml/*.puml -o ../images/
-            plantuml -v -tpng puml/*.puml -o ../images/
+            plantuml -v -tsvg puml/*.puml -o ../autogen/
+            plantuml -v -tpng puml/*.puml -o ../autogen/
             tree .
             git status
 
@@ -33,7 +33,7 @@ jobs:
           message: "Plant UML"
           author_name: "OssontsBOT"
           #branch: feedback
-          add:  "images/**"
+          add:  "autogen/**"
           #tag: 'Submit --force'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
