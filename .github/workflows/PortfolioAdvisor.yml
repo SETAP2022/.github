@@ -48,7 +48,7 @@ jobs:
     - name: Clone Advisor
       uses: actions/checkout@v2                            # 2
       with:
-        repository: setap2021/Portfolio4-Marker # CHANGE HERE
+        repository:  ${{ inputs.advisorRepo }} # CHANGE HERE
         token: ${{ secrets.PAT_RO }}              # 4
         path: .Ossonts/
         ref: 'main'
