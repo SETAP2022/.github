@@ -17,7 +17,7 @@ jobs:
       with:
         config-file: ".Ossonts/mlc.json"
         folder-path: "."
-        max-depth: 1
+        max-depth: 2
 
   markdownlint-cli:
     #runs-on: ubuntu-20.04
@@ -31,6 +31,6 @@ jobs:
     - name: markdownlint-cli
       uses: nosborn/github-action-markdown-cli@v2
       with:
-        files: "./*.md" #Just ROOT
-        ignore_files: "README.md"
+        files: "./*.md" #Just ROOT markdown files
+        ignore_files: "README.md" #Ignore me
         config_file: ".markdownlint.yaml"
