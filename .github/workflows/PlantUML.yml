@@ -18,5 +18,6 @@ jobs:
     steps:
       - name: ExecutePlantUML
         run: |
+            apt update
             apt install -y plantuml
             plantuml puml/*
