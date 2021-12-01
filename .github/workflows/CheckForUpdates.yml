@@ -18,10 +18,11 @@ jobs:
   #  - uses: actions/checkout@master
   #  - uses: gaurav-nelson/github-action-markdown-link-check@v1
   #${{ github.event.repository.name }}
-  if: ${{ !contains(github.event.repository.name , 'Template') }}
+  
 
   CheckForUpdates:
     #runs-on: ubuntu-20.04
+    if: ${{ !contains(github.event.repository.name , 'Template') }}
     runs-on: [self-hosted, linux, x64,L1]
     #container: ossonts/setap:latest # Beware of versioning here DOCKERHUB
     container:
