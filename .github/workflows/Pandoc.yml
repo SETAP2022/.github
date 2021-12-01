@@ -8,11 +8,12 @@ name: Pandoc
 on:
   workflow_call: #https://docs.github.com/en/actions/learn-github-actions/reusing-workflows#creating-a-reusable-workflow
 
-  #https://levelup.gitconnected.com/how-to-manually-trigger-a-github-actions-workflow-4712542f1960
+    #https://levelup.gitconnected.com/how-to-manually-trigger-a-github-actions-workflow-4712542f1960
     inputs:
-      git-ref:
-        description: SHA (Leave Blank)
-        required: false
+       git-ref:
+         description: SHA (Leave Blank)
+         required: false
+         type: string
   # push:
   #   branches: [ master , main ]
   #   paths:
