@@ -33,7 +33,7 @@ jobs:
       uses: actions/checkout@v2                            # 2
       with:
         repository:  ${{ inputs.templateRepo }}
-        token: ${{ inputs.PAT_RO }}              # 4
+        token: ${{ secrets.PAT_RO }}              # 4
         path: Template
 
     - name: Clone Student Repository (Latest)
