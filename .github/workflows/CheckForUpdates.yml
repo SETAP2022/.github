@@ -6,9 +6,9 @@ on: #DO NOT CHANGE
         templateRepo:
           required: true
           type: string
-        PAT_RO:
-          required: true
-          type: string
+        # PAT_RO:
+        #   required: true
+        #   type: string
 
 jobs:
   #markdown-link-check:
