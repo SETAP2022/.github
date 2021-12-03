@@ -33,7 +33,7 @@ jobs:
           message: "Plant UML"
           author_name: "OssontsBOT"
           #branch: feedback
-          add:  "puml.images/**"
+          add:  "puml/images/**"
           #tag: 'Submit --force'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
