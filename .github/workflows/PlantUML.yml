@@ -34,7 +34,7 @@ jobs:
           message: "Plant UML"
           author_name: "OssontsBOT"
           #branch: feedback
-          remove: "puml/images/**"
+          #remove: "puml/images/**"
           add:  "puml/images/**"
           #tag: 'Submit --force'
         env:
