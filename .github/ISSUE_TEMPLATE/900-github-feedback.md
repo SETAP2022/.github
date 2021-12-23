@@ -20,4 +20,5 @@ labels: Feedback
 * Marks are **individual** check on moodle now
 * Open an issue if there is a problem
 * Failure to rectify / raise an issue now indicates all is well
+* You must watch **all** videos (probably 2) before opening an issue
 
