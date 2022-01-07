@@ -1,0 +1,33 @@
+name: SlideBuilder
+
+on:
+  workflow_call: #https://docs.github.com/en/actions/learn-github-actions/reusing-workflows#creating-a-reusable-workflow
+
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    #runs-on: ubuntu-20.04
+    runs-on: [self-hosted, linux, x64,L1]
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+
+      # Runs a single command using the runners shell
+      - name: Run MARP config
+        run: npx @marp-team/marp-cli  --config-file .Ossonts/.marprc.yml
+
+      # Commit auto generated files
+      - uses: EndBug/add-and-commit@v7
+        with:
+          message: "Auto build PDF"
+          #remove: 'build/README.pdf'
+          add: "**/*.pdf"
+          #force: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
