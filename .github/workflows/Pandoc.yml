@@ -62,8 +62,8 @@ jobs:
           message: "Pandoc PDF"
           author_name: "OssontsBOT"
           #branch: feedback
-          add:  "Submit/*.pdf"
-          add: "SETAP.pdf"  #Needed for slides repo ONLY
+          add:  "SETAP.pdf,Submit/*.pdf"
+          
           #tag: 'Submit --force'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
