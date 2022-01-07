@@ -20,7 +20,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run MARP config
-        run: npx @marp-team/marp-cli  --config-file .Ossonts/.marprc.yml
+        run: npx @marp-team/marp-cli  --config-file .github/configs/SlideBuilder.yml
 
       # Commit auto generated files
       - uses: EndBug/add-and-commit@v7
