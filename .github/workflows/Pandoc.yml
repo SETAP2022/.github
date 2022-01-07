@@ -48,7 +48,7 @@ jobs:
         run: |
           pwd
           echo "Files and order:"
-          cat .pandoc.yml  2>/dev/null #Ignore not there
+          cat .pandoc.yml
           tree
           cat  .Ossonts/pandoc.yml
 
@@ -63,7 +63,7 @@ jobs:
           author_name: "OssontsBOT"
           #branch: feedback
           add:  '["SETAP.pdf","Submit/*.pdf"]'
-          
+
           #tag: 'Submit --force'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
