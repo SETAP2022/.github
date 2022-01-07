@@ -30,12 +30,11 @@ jobs:
           add: "**/*.pdf"
           #force: true
           allowLocalFiles: true
-          looseYAML: false
-          markdown:
-            breaks: false
-            enableHtml: true
-        #html: true
-        pdf: true
-        inputDir: ..
+          looseYAML: false          
+          breaks: false
+          enableHtml: true
+          #html: true
+          pdf: true
+          inputDir: ..
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
