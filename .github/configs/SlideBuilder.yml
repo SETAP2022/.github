@@ -1,0 +1,12 @@
+# .marprc.yml
+#markdown.marp.enableHtml
+allowLocalFiles: true
+options:
+  looseYAML: false
+  markdown:
+    breaks: false
+    enableHtml: true
+#html: true
+pdf: true
+inputDir: ..
+#output: ../build/
