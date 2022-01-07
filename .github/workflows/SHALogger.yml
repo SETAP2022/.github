@@ -20,7 +20,11 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-20.04
+    runs-on: [self-hosted, linux, x64,L1]
+    container:
+       image: ghcr.io/setap2021/setapdocker   # Beware of versioning here GITHUB -- Some kind of magic here
+       env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     #if: ${{ github.actor != 'Ossonts'}} # Not by me
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
