@@ -62,7 +62,7 @@ jobs:
           message: "Pandoc PDF"
           author_name: "OssontsBOT"
           #branch: feedback
-          add:  "SETAP.pdf,Submit/*.pdf"
+          add:  '["SETAP.pdf","Submit/*.pdf"]'
           
           #tag: 'Submit --force'
         env:
