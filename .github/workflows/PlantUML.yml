@@ -23,7 +23,7 @@ jobs:
             #apt install -y plantuml
             #pwd
             tree .
-            mkdir puml/
+            mkdir puml/images
             rm -v puml/images/*  || true
             plantuml -v -tsvg puml/*.puml -o images/
             plantuml -v -tpng puml/*.puml -o images/
