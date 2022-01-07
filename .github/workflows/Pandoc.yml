@@ -63,6 +63,7 @@ jobs:
           author_name: "OssontsBOT"
           #branch: feedback
           add:  "Submit/*.pdf"
+          add: "SETAP.pdf"  #Needed for slides repo ONLY
           #tag: 'Submit --force'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

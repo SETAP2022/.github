@@ -20,7 +20,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run MARP config
-        run: npx @marp-team/marp-cli  --config-file .github/configs/SlideBuilder.yml
+        run: npx @marp-team/marp-cli  --config-file .Ossonts/.marprc.yml
 
       # Commit auto generated files
       - uses: EndBug/add-and-commit@v7
@@ -29,13 +29,5 @@ jobs:
           #remove: 'build/README.pdf'
           add: "**/*.pdf"
           #force: true
-          allowLocalFiles: true
-          looseYAML: false
-          markdown:
-            breaks: false
-            enableHtml: true
-        #html: true
-        pdf: true
-        inputDir: ..
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
