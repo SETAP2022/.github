@@ -19,8 +19,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: ExecutePlantUML
         run: |
-            #apt update
-            #apt install -y plantuml
+            # Added to docker
             #pwd
             tree .
             mkdir -p puml/images
