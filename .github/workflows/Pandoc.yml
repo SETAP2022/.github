@@ -48,7 +48,7 @@ jobs:
         run: |
           pwd
           echo "Files and order:"
-          cat .pandoc.yml
+          cat .pandoc.yml  2>/dev/null #Ignore not there
           tree
           cat  .Ossonts/pandoc.yml
 
