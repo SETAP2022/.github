@@ -24,7 +24,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run MARP config
-        run:  CHROME_PATH=$(which google-chrome) marp  --config-file .Ossonts/.marprc.yml
+        run: |
+          tree .
+          cat .Ossonts/.marprc.yml
+          CHROME_PATH=$(which google-chrome) marp  --config-file .Ossonts/.marprc.yml
 
       # Commit auto generated files
       - uses: EndBug/add-and-commit@v7
