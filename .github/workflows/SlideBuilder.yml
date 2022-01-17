@@ -31,7 +31,7 @@ jobs:
           #CHROME_PATH=$(which google-chrome) marp  --config-file .Ossonts/.marprc.yml
           #SLides ONLY
           CHROME_PATH=$(which google-chrome) marp  --pdf --allow-local-files  --input-dir Slides
-          CHROME_PATH=$(which google-chrome) marp  --pdf --allow-local-files  --input-dir Support
+          CHROME_PATH=$(which google-chrome) marp  --pdf --allow-local-files  --input-dir support
 
       # Commit auto generated files
       - uses: EndBug/add-and-commit@v7
