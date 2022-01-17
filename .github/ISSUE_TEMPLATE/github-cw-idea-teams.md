@@ -1,7 +1,6 @@
 ---
 name: Issue with creating a team
 about: Team problems
-title: "Replace this text with a title"
 labels: CW-Team
 assignees: ossonts
 

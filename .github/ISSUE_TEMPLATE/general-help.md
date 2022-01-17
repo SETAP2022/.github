@@ -1,7 +1,6 @@
 ---
 name: General Help
 about: If no other template fits the problem
-title: "Replace this text with a title"
 labels: "Help wanted"
 assignees: ossonts
 

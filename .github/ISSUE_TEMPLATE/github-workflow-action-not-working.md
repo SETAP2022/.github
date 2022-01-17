@@ -1,7 +1,6 @@
 ---
 name: GitHub Workflow/Action not working
 about: For problems with the workers/actions
-title: "Replace this text with a title"
 labels: runners
 assignees: ossonts
 

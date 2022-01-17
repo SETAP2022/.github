@@ -1,7 +1,6 @@
 ---
 name: CW Feedback video
 about: Admin usage only please
-title: "Feedback video for your CW"
 labels: Feedback
 
 ---
