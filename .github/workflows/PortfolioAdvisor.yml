@@ -67,6 +67,7 @@ jobs:
       run: |
         tree
         cp -v .Ossonts/Advisor* FEEDBACK/.Ossonts/
+        cat .Ossonts/Advisor*
         tree  FEEDBACK/.Ossonts/
       shell: bash
 
