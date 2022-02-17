@@ -50,6 +50,7 @@ jobs:
       - name: Find .md files
         run: |
           pwd
+          echo "$0"
           echo "Files and order:"
           cat .pandoc.yml
           tree
