@@ -52,7 +52,7 @@ jobs:
           pwd
           echo "Files and order:"
           cat .pandoc.yml
-          tree
+          tree -a
           cat  .Ossonts/pandoc.yml
 
       - name: Make PDF
