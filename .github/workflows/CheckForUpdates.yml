@@ -40,13 +40,33 @@ jobs:
     - name: Remove Protected files from template
       run: |
         cd Template/
-        chmod +x .Ossonts/RemoveReservedFiles.sh
-        .Ossonts/RemoveReservedFiles.sh
+        #chmod +x .Ossonts/RemoveReservedFiles.sh
+        #.Ossonts/RemoveReservedFiles.sh
+        # This is a list of files that a student MIGHT have edited, -- so we dont want to overwrite.
+        #Remove template files that should not be overwritten
+        #You need to remove all files you want to keep :-)
+        #Now any files I want to keep ?
+        rm -fv CheckList.md
+        rm -fv .pandoc.yml
+        rm -fv Student.id ## Incase there is a testing ID in the system
+        rm -fv Submit/*
+        rm -fv Portfolio.md
+        rm -fv CW.md
+        rm -fv header.md
+        rm -fv declaration.md
+        rm -fv .Ossonts/*.log
+        rm -fv .Ossonts/RemoveReservedFiles.sh
+        rm -fv .github/workflows/CheckForUpdates.yml  # Dont trust updating the updater
+
       shell: bash
 
     - name: Overlay updated files (if any)
       run: |
-        Template/.Ossonts/CopyTemplateFilesToRepo.sh
+        #Template/.Ossonts/CopyTemplateFilesToRepo.sh
+        cp -vrf Template/* Student/
+        cp -vrf Template/.Ossonts/* Student/.Ossonts/
+        cp -vrf Template/.github/* Student/.github/
+        cp -vrf Template/.vscode/* Student/.vscode/
         tree Template/
         tree Student/
         # echo "Template folder"
