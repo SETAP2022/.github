@@ -40,7 +40,7 @@ jobs:
           echo $GITHUB_SHA
           echo $GITHUB_ACTOR
           chmod +x  .Ossonts/SHALogger.sh
-          .Ossonts/SHALogger.sh
+          #.Ossonts/SHALogger.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Commit auto generated files
