@@ -66,7 +66,7 @@ jobs:
         cp -vrf Template/* Student/
         cp -vrf Template/.Ossonts/* Student/.Ossonts/
         cp -vrf Template/.github/* Student/.github/
-        cp -vrf Template/.vscode/* Student/.vscode/
+        cp -vrf Template/.vscode/* Student/.vscode/ || true
         tree Template/
         tree Student/
         # echo "Template folder"
