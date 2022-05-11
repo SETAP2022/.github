@@ -57,6 +57,9 @@ jobs:
         rm -fv .Ossonts/*.log
         rm -fv .Ossonts/RemoveReservedFiles.sh
         rm -fv .github/workflows/CheckForUpdates.yml  # Dont trust updating the updater
+        #p12
+        rm -fv .github/workflows/StudentWorkflow.yml
+        rm -fv .github/workflows/StudentWorkflowMatrix.yml
 
       shell: bash
 
